@@ -3,8 +3,9 @@
     <h1>{{ title }}</h1>
     <ul>
     <book-item v-for="book in books" :book='book'></book-item>
-    <book-form>@addBook='appendBook'</book-form>
     </ul>
+    <hr>
+    <book-form @addBook='appendBook'></book-form>
   </div>
 </template>
 
